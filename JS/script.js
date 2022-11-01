@@ -11,3 +11,7 @@ function addElemento(texto){
 
 const fragment = document.createDocumentFragment();
 
+
+for (let i = 0; i< 7000; i++){
+    
+}
