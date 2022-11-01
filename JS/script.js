@@ -14,6 +14,8 @@ const fragment = document.createDocumentFragment();
 
 for (let i = 0; i< 7000; i++){
     const div = document.createElement("div");
-    div.textContent = Item nuevo $(i);
+    div.textContent = 'Item nuevo ${i}';
     fragment.appendChild(div);
 }
+
+document.body.appendChild(fragment);
