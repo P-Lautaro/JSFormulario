@@ -1,21 +1,9 @@
-var formu = document.getElementById("formu");
+capa = document.getElementById("capa");
 
 
 function addElemento(texto){
-    var capa = document.getElementById("formu");
+    var capa=document.getElementById("capa");
     var h1 = document.createElement("h1");
     h1.innerHTML = texto;
-    formu.appendChild(h1);
+    capa.appendChild(h1);
 }
-
-
-const fragment = document.createDocumentFragment();
-
-
-for (let i = 0; i< 7000; i++){
-    const div = document.createElement("div");
-    div.textContent = 'Item nuevo ${i}';
-    fragment.appendChild(div);
-}
-
-document.body.appendChild(fragment);
